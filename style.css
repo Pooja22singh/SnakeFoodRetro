@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.board {
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    width: 420px;
+}
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    background-color: #9b9b43;
+    border-radius: 20px;
+    border: 10px solid burlywood;
+    height: 420px;
+}
+.scores {
+    display: flex;
+    justify-content: space-between;;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+.container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 42%
+}
+.startState {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    border: 10px solid burlywood;
+    border-radius: 20px;
+    background-color: #9b9b43;
+    margin-top: 80px;
+}
+.displayNone {
+    display: none;
+}
+p#instructions {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 39px;
+    width: 96%;
+    color: ghostwhite;
+}
+.snake, .food {
+    box-sizing: border-box;
+}
